@@ -1,2 +1,10 @@
 h3 Home of the Mighty Directives!
+div(rtm-stock, symbol='GOOG')
+div(rtm-stock, symbol='AMZN')
+div(rtm-stock, symbol='AAPL')
+
 div(ng-repeat='person in people', rtm-greeting, name='{{person.name}}', age='{{person.age}}')
+
+div(rtm-clock, frequency='2000')
+div(rtm-clock, frequency='1000')
+div(rtm-clock, frequency='500')

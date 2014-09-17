@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('directives-demo', ['ngRoute', 'LocalForageModule', 'rtmGreetingModule'])
+  angular.module('directives-demo', ['ngRoute', 'LocalForageModule', 'rtmGreetingModule', 'rtmClockModule', 'rtmStockModule'])
   .config(['$routeProvider', '$httpProvider', '$localForageProvider', function($routeProvider, $httpProvider, $localForageProvider){
     $routeProvider
     .when('/', {templateUrl:'/views/home/home.html', controller:'HomeCtrl'})
